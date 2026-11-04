@@ -1,0 +1,94 @@
+{
+  "brand": "Blue Monkey Card",
+  "trademark": {
+    "mark": "BLUE MONKEY CARD",
+    "first_use_anywhere": "2026-10-29",
+    "first_use_in_commerce": "2026-10-29",
+    "location": "Spring Branch, TX 78070 (Comal County), Bulverde, TX",
+    "owner": "John Patrick Uhri",
+    "entity_planned": "Blue Monkey Card, Inc. - Delaware C-Corp via Stripe Atlas",
+    "classes": {
+      "36": "Financial services - secured credit card issuing, credit building",
+      "9": "Downloadable mobile app for credit card management"
+    },
+    "common_law_symbol": "\u2122 - Use BLUE MONKEY CARD\u2122 until USPTO registration",
+    "search_note": "No live filing in Class 36 as of Oct 2026 check. Live marks exist in other classes: Power Supplements LLC Houston (supplements), beverage class - not conflicting"
+  },
+  "design": {
+    "name": "FINAL S-Hanging Edition - Real Monkey",
+    "date_finalized": "2026-11-04",
+    "version": "v5.0 S-Hanging Real",
+    "monkey_description": "Real monkey not mouse - small rounded ears, long arms, black hands/feet, curly spiral tail, capuchin face with slight muzzle, blue fur #2D7FF9, white chest patch, green vine with leaves",
+    "why_S": "Middle letter of VISA, balanced, centered, best for metal polish",
+    "visa_placement": "V I S A as separate white tiles (52x52px, 10px gap, 7px radius) top-center at y=28, monkey vine hooked on S tile, S redrawn on top for grip effect",
+    "colors": {
+      "electric_blue_bg": "#0A2A8A (deep navy for card, Pantone 2728 C #2D7FF9 for marketing)",
+      "banana_chip": "#FFD60A",
+      "white_outline": "#FFFFFF 3mm outline + soft glow blur for pop",
+      "visa_blue_text": "#0033A0 on white tiles",
+      "green_vine": "#3CB371"
+    },
+    "size": "CR80 - 85.6mm x 53.98mm - Bleed 3.175mm - Export 1032x664 @ 300 DPI - Rounded corners 3.18mm radius",
+    "finish_metal": "Brushed matte blue PVD background, mirror polished monkey + white outline + green vine enamel + yellow banana, 18g stainless steel 0.8mm",
+    "finish_plastic": "Blue plastic PVC, same art, white outline not needed",
+    "chip": "Banana yellow rounded rectangle 90x68 top-left at 50,55"
+  },
+  "products": {
+    "plastic": {
+      "product_id": "blue_monkey_plastic_s_hanging",
+      "name": "Blue Monkey Card Plastic - S-Hanging Real Monkey",
+      "cost_to_you": "$1.20 per card - CPI Card Group",
+      "customer_price": "$0 FREE with $200+ deposit",
+      "shipping": "5 days via Lithic standard",
+      "lithic_type": "VIRTUAL instantly + PHYSICAL optional",
+      "target": "First-time credit builder, Security Service FCU members, low barrier"
+    },
+    "metal": {
+      "product_id": "blue_monkey_metal_s_hanging",
+      "name": "Blue Monkey Card Metal - S-Hanging Real Monkey - 18g Blue PVD",
+      "cost_to_you": "$25-$35 per card - CompoSecure",
+      "customer_price": "$49 one-time OR FREE if deposit >= $1000 held 3 months",
+      "shipping": "10 days via CompoSecure",
+      "lithic_type": "PHYSICAL",
+      "target": "Flex / TikTok / premium - people who want to show off at Broadway Bank",
+      "margin": "$49 - $30 = $19 profit + $6 interchange = $25 first month"
+    }
+  },
+  "lithic": {
+    "dashboard": "https://dashboard.lithic.com/card-products",
+    "sponsor_bank": "Lead Bank - Kansas City MO - $25k reserve - 2-3 week approval - Contact via Lithic Request Production Access",
+    "api_example": {
+      "endpoint": "POST /v1/cards",
+      "body_plastic": {
+        "type": "VIRTUAL",
+        "product_id": "blue_monkey_plastic_s_hanging",
+        "memo": "Blue Monkey Card S-Hanging - PLASTIC",
+        "spend_limit": 30000,
+        "spend_limit_duration": "FOREVER"
+      },
+      "body_metal": {
+        "type": "PHYSICAL",
+        "product_id": "blue_monkey_metal_s_hanging",
+        "memo": "Blue Monkey Card S-Hanging - METAL",
+        "spend_limit": 100000,
+        "shipping_address": "required for metal"
+      }
+    }
+  },
+  "backend": {
+    "endpoint": "POST /api/deposit",
+    "params": {
+      "userId": "user_...",
+      "amountCents": "10000 to 100000 ($100-$1000)",
+      "cardType": "PLASTIC or METAL"
+    },
+    "server_file": "server.js - supports both product IDs"
+  },
+  "composecure_specs": {
+    "material": "Stainless steel 0.8mm, 18g",
+    "pvd": "Blue PVD matte brushed",
+    "polish": "Mirror polished monkey, white outline, green vine",
+    "enamel": "Green vine #3CB371, yellow banana #FFD60A",
+    "contact": "CompoSecure sales - custom metal via Lithic"
+  }
+}

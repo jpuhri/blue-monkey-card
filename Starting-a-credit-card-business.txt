@@ -1,0 +1,4 @@
+card-art/
+  FINAL_S_Hanging_2026-11-04/
+    Front_S_Hanging_FINAL.png  <- PUT FINAL S HERE (this is the monkey card now)
+    Back_S_Hanging_FINAL.png
